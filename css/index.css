@@ -3,4 +3,5 @@
 @import "./variables/structure.css";
 @import "./variables/transitions.css";
 @import "./variables/typography.css";
-@import "./index.css";
+@import "./base/typography.css";
+@import "./animations.css";
