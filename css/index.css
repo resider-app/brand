@@ -1,7 +1,3 @@
-@import "./variables/layers.css";
-@import "./variables/skin.css";
-@import "./variables/structure.css";
-@import "./variables/transitions.css";
-@import "./variables/typography.css";
-@import "./base/typography.css";
+@import "variables/index.css";
 @import "animations/index.css";
+@import "base/index.css";
