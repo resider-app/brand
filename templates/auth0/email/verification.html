@@ -1,0 +1,260 @@
+<html>
+
+<head>
+  <link rel="font" type="font/woff"
+    href="https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Regular.woff" crossorigin />
+  <link rel="font" type="font/woff"
+    href="https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Medium.woff" crossorigin />
+  <link rel="font" type="font/woff" href="https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Bold.woff"
+    crossorigin />
+  <link rel="font" type="font/woff"
+    href="https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-SemiBold.woff" crossorigin />
+  <link rel="font" type="font/woff"
+    href="https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Black.woff" crossorigin />
+  <link rel="font" type="font/woff"
+    href="https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Heavy.woff" crossorigin />
+  <!-- Reset -->
+  <style>
+    *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+      all: unset;
+      display: revert;
+    }
+
+    /* Preferred box-sizing value */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    /*
+    Remove list styles (bullets/numbers)
+    in case you use it with normalize.css
+  */
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    /* For images to not be able to exceed their container */
+    img {
+      max-width: 100%;
+    }
+
+    /* Removes spacing between cells in tables */
+    table {
+      border-collapse: collapse;
+    }
+
+    /* Revert the 'white-space' property for textarea elements on Safari */
+    textarea {
+      white-space: revert;
+    }
+
+    @media screen and (prefers-reduced-motion: no-preference) {
+      html {
+        scroll-behavior: smooth;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      -webkit-font-smoothing: antialiased;
+      -webkit-touch-callout: none;
+
+      @media all and (max-width: 1024px) {
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      overscroll-behavior: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    body {
+      font-family: 'Obibok', -apple-system, 'Segoe UI',
+        'Ubuntu', sans-serif;
+    }
+  </style>
+  <!-- Fonts -->
+  <style>
+    @font-face {
+      font-family: 'Obibok';
+      font-display: swap;
+      font-weight: 400;
+      src: url('https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Regular.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Obibok';
+      font-display: swap;
+      font-weight: 500;
+      src: url('https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Medium.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Obibok';
+      font-display: swap;
+      font-weight: 600;
+      src: url('https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-SemiBold.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Obibok';
+      font-display: swap;
+      font-weight: 700;
+      src: url('https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Bold.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Obibok';
+      font-display: swap;
+      font-weight: 800;
+      src: url('https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Black.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Obibok';
+      font-display: swap;
+      font-weight: 900;
+      src: url('https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Heavy.woff') format('woff');
+    }
+  </style>
+  <!-- Layout -->
+  <style>
+    body,
+    .main {
+      background-color: #fafafa !important;
+      color: #3a3a3d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main {
+      padding: 48px 16px;
+    }
+
+    .button {
+      transition: all 0.24s ease-out;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      appearance: none;
+      cursor: pointer;
+      color: #fff;
+      background: #611fef;
+      padding: 0 16px;
+      height: 52px;
+      font: 700 15px/20px 'Obibok', -apple-system, sans-serif;
+      border: 2px solid transparent;
+      border-radius: 20px;
+    }
+
+
+    .tx-h1 {
+      font-weight: 900;
+      font-size: 34px;
+      line-height: 40px;
+    }
+
+    .tx-h2 {
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 32px;
+    }
+
+    .tx-h3 {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    .tx-h4 {
+      font-weight: 800;
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    .tx-h5 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    /* Paragraph */
+
+    .tx-tiny {
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 12px;
+    }
+
+    .tx-caption {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .tx-small {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 24px;
+    }
+
+    .tx-body {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 28px;
+    }
+
+    .tx-big {
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 28px;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+      <tr>
+        <td>
+          <div class="main">
+            <img src="https://www.resider.pl/svg/brand/resider-logo.svg" height="32px" alt="Resider" />
+
+            <h1 class="tx-h1">
+              Witaj w Resider!
+            </h1>
+            <p>
+              Cieszymy się, że do nas dołączasz! Potwierdź, proszę, swój adres e-mail klikając w ten link:
+            </p>
+            <a class="button" href="{{ url }}">
+              Potwierdź moje konto
+            </a>
+            <p>
+              Jeśli masz jakiekolwiek problemy ze swoim kontem, skontaktuj się z nami pisząc nam wiadomość na adres <a
+                href="mailto:kontakt@resider.pl">kontakt@resider.pl</a>
+            </p>
+            <p>
+              Pozdrawiamy,
+              <br />
+              Zespół Resider
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+
+</html>
