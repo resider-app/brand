@@ -50,9 +50,9 @@
 
 	/* Borders */
 
-	--border-1: 2px solid var(--c-gray-light);
-	--border-2: 2px solid var(--c-primary);
-	--border-macro-ui: 2px solid var(--c-gray-light);
+	--border-1: 2px solid var(--color-gray-light);
+	--border-2: 2px solid var(--color-primary);
+	--border-macro-ui: 2px solid var(--color-gray-light);
 
 	/* Shadows */
 
