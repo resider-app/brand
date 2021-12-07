@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png"
     href="https://resider-brand.s3.eu-central-1.amazonaws.com/png/resider-favicon.png" />
-  <link rel="stylesheet" href="https://unpkg.com/@resider/css-reset@0.0.2/reset.css" crossorigin />
+  <link rel="stylesheet" href="https://unpkg.com/@resider/css-reset@0.0.4/reset.css" crossorigin />
   <link rel="preload" as="font" type="font/woff"
     href="https://resider-brand.s3.eu-central-1.amazonaws.com/fonts/Obibok/Obibok-Regular.woff2" crossorigin />
   <link rel="preload" as="font" type="font/woff"
@@ -59,99 +59,6 @@
 
 <!-- Components -->
 <style>
-  .accordion {
-    --open-transition-time: 0.52s;
-    --close-transition-time: 0.2s;
-    --gap: 8px;
-  }
-
-  .accordion>.inner {
-    display: grid !important;
-    gap: var(--gap) !important;
-    align-content: start !important;
-  }
-
-  .accordion-item {
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  .accordion-item .title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    pointer-events: all;
-    margin: 0;
-    cursor: pointer;
-    user-select: none;
-    position: relative;
-    width: 100%;
-  }
-
-  @media not handheld {
-    .accordion-item .title:hover {
-      color: var(--color-primary);
-    }
-
-    .accordion-item .title:hover :global(svg) {
-      stroke: var(--color-primary);
-    }
-  }
-
-  .accordion-item .title .icon {
-    display: grid;
-    place-content: center;
-    place-items: center;
-    transition: all 0.2s ease-out;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .accordion-item summary {
-    display: flex;
-    flex-direction: column;
-    outline: none;
-    place-content: center start;
-    color: black;
-    list-style: none;
-    -webkit-tap-highlight-color: transparent;
-    pointer-events: none;
-  }
-
-  .accordion-item summary button,
-  .accordion-item summary input,
-  .accordion-item summary textarea,
-  .accordion-item summary a {
-    pointer-events: all;
-  }
-
-  .accordion-item summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .accordion-item .content {
-    transition: all var(--close-transition-time) ease-out;
-    max-height: 0;
-    opacity: 0;
-    padding: 0;
-    margin: 0;
-    pointer-events: none;
-  }
-
-  .accordion-item[open] summary .title {
-    color: var(--color-primary);
-  }
-
-  .accordion-item[open] summary .title .icon {
-    transform: rotate(180deg);
-  }
-
-  .accordion-item[open] .content {
-    transition: all var(--open-transition-time) ease-out;
-    opacity: 1;
-    max-height: 100vh;
-  }
-
   .button {
     --borderWidth: 2px;
     --borderColor: transparent;
@@ -178,10 +85,7 @@
     /** STATES **/
   }
 
-  .button:not([disabled=disabled]),
-  .wp-block-button__link:not([disabled=disabled]),
-  [busy=true].button,
-  [busy=true].wp-block-button__link {
+  .button:not([disabled=disabled]) [busy=true].button {
     background: var(--background);
     border-color: var(--borderColor);
     color: var(--color);
@@ -190,17 +94,14 @@
   @media all and (min-width: 1025px) {
 
     .button:not([disabled=disabled]):hover,
-    .wp-block-button__link:not([disabled=disabled]):hover,
-    [busy=true].button:hover,
-    [busy=true].wp-block-button__link:hover {
+    [busy=true].button:hover {
       background: var(--backgroundHover, var(--background));
       color: var(--colorHover, var(--color));
       border-color: var(--borderColorHover, var(--borderColor));
     }
   }
 
-  .extra-small.button,
-  .extra-small.wp-block-button__link {
+  .extra-small.button {
     --height: 32px;
     --padding: 0 12px;
     --borderRadius: 16px;
@@ -300,108 +201,6 @@
     --color: var(--color-text);
   }
 
-  .checkable {
-    position: relative;
-    align-items: center;
-    letter-spacing: var(--letterSpacing);
-    font: var(--fontWeight, 600) 15px/var(--lineHeight, 28px) var(--font-family) !important;
-  }
-
-  .checkable,
-  .checkable input,
-  .checkable label {
-    cursor: pointer;
-  }
-
-  .checkable input {
-    margin-right: 8px;
-    border: 2px solid var(--color-primary);
-    background: var(--color-white);
-    margin: 0;
-  }
-
-  .checkable input[type=checkbox] {
-    width: 20px;
-    height: 20px;
-    border-radius: 6px;
-  }
-
-  .checkable input[type=checkbox]:checked+label::after {
-    content: "";
-    border-bottom: 3px solid var(--color-black);
-    border-right: 3px solid var(--color-black);
-    width: 5px;
-    height: 11px;
-    display: flex;
-    position: absolute;
-  }
-
-  .checkable input[type=radio] {
-    width: 20px;
-    height: 20px;
-    border-radius: 36px;
-  }
-
-  .checkable input[type=radio]:checked+label::after {
-    content: "";
-    background: var(--color-black);
-    border-radius: 36px;
-    width: 12px;
-    height: 12px;
-    display: flex;
-    position: absolute;
-  }
-
-  .checkable.vertical input:checked+label::after {
-    left: 50%;
-  }
-
-  .checkable.horizontal input[type=radio]:checked+label::after {
-    left: 4px;
-    top: 8px;
-  }
-
-  .checkable.horizontal input[type=checkbox]:checked+label::after {
-    left: 6px;
-    top: 42%;
-    transform: translate(0, -50%) rotate(45deg);
-  }
-
-  .checkable.vertical input[type=radio]:checked+label::after {
-    top: 4px;
-    transform: translate(-50%);
-  }
-
-  .checkable.vertical input[type=checkbox]:checked+label::after {
-    top: 8px;
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-
-  .checkable,
-  .checkable-group {
-    display: flex;
-  }
-
-  .checkable.vertical,
-  .checkable-group.vertical {
-    flex-direction: column;
-  }
-
-  .checkable.vertical>*:not(:last-child),
-  .checkable-group.vertical>*:not(:last-child) {
-    margin-bottom: var(--gap);
-  }
-
-  .checkable.horizontal,
-  .checkable-group.horizontal {
-    flex-direction: row;
-  }
-
-  .checkable.horizontal>*:not(:last-child),
-  .checkable-group.horizontal>*:not(:last-child) {
-    margin-right: var(--gap);
-  }
-
   .field {
     height: 52px !important;
     border-radius: var(--border-radius-ls);
@@ -464,17 +263,22 @@
 
   form .button:nth-child(1) {
     grid-column: 1/2;
+    margin-top: 4px;
   }
 
   form .button:nth-child(2) {
     grid-column: 2/3;
+    margin-top: 4px;
   }
 
   #btn-google,
   #btn-forgotpassword {
-    margin-top: 8px;
     grid-column: 1/3;
     --gap: 8px;
+  }
+
+  form .button:not(:last-child) {
+    margin-top: 8px;
   }
 </style>
 
@@ -605,7 +409,19 @@
       }
 
       function forgotopassword() {
-        console.log('Forgot password function goes here')
+        var button = this;
+
+        button.disabled = true;
+        webAuth.changePassword({
+          connection: databaseConnection,
+          email: email
+        }, function (err, resp) {
+          if (err) {
+            console.log(err.message);
+          } else {
+            console.log(resp);
+          }
+        });
       }
 
       function loginWithGoogle() {
