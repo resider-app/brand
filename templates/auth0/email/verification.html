@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="font" type="font/woff"
     href="https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Regular.woff" crossorigin />
   <link rel="font" type="font/woff"
@@ -136,6 +137,9 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      text-align: left;
+      max-width: 560px;
+      margin: auto;
     }
 
     .main {
@@ -221,40 +225,58 @@
       font-size: 17px;
       line-height: 28px;
     }
+
+    p {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    a {
+      color: #611fef;
+      cursor: pointer;
+    }
+
+    p:not(:first-child) {
+      margin: 16px 0;
+    }
+
+    strong {
+      font-weight: 700;
+    }
   </style>
 </head>
 
 <body>
-  <center>
-    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
-      <tr>
-        <td>
-          <div class="main">
-            <img src="https://www.resider.pl/svg/brand/resider-logo.svg" height="32px" alt="Resider" />
+  <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+    <tr>
+      <td>
+        <div class="main">
+          <img src="https://www.resider.pl/svg/brand/resider-logo.svg" height="28px" alt="Resider" />
 
-            <h1 class="tx-h1">
-              Witaj w Resider!
-            </h1>
-            <p>
-              Cieszymy się, że do nas dołączasz! Potwierdź, proszę, swój adres e-mail klikając w ten link:
-            </p>
-            <a class="button" href="{{ url }}">
-              Potwierdź moje konto
-            </a>
-            <p>
-              Jeśli masz jakiekolwiek problemy ze swoim kontem, skontaktuj się z nami pisząc nam wiadomość na adres <a
-                href="mailto:kontakt@resider.pl">kontakt@resider.pl</a>
-            </p>
-            <p>
-              Pozdrawiamy,
-              <br />
-              Zespół Resider
-            </p>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </center>
+          <h1 class="tx-h2" style="margin: 24px 0;">
+            Witaj w Resider!
+          </h1>
+          <p>
+            Cieszymy się, że do nas dołączasz! Ostatni krok rejestracji to weryfikacja Twojego adresu e-mail. Możesz to
+            zrobić klikając w ten link:
+          </p>
+          <a class="button" style="margin: 24px 0;" href="{{ url }}">
+            Potwierdź moje konto
+          </a>
+          <p>
+            Jeśli masz jakiekolwiek problemy ze swoim kontem, skontaktuj się z nami pisząc nam wiadomość na adres <a
+              href="mailto:kontakt@resider.pl">kontakt@resider.pl</a>
+          </p>
+          <p style="width: 100%;">
+            Pozdrawiamy,
+            <br />
+            <strong>Zespół Resider</strong>
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
 </body>
 
 </html>
