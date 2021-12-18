@@ -5,6 +5,7 @@
 :root {
 	/* Spacing (positioning, padding, margins, gaps) */
 
+	--space-0: 2px;
 	--space-1: 4px;
 	--space-2: 6px;
 	--space-3: 8px;
