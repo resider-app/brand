@@ -34,8 +34,8 @@
 	--tx-button-small: 700 var(--fontSize, 13px) / 16px var(--font-family);
 }
 
-@media all and (max-width: 767px) {
+/* @media all and (max-width: 767px) {
 	:root {
 		--tx-h1: 900 30px / 40px var(--font-family);
 	}
-}
+} */
