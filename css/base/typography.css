@@ -22,3 +22,7 @@ h5 {
 	letter-spacing: var(--letterSpacing);
 	font: var(--tx-h5);
 }
+
+strong {
+	font-weight: bolder;
+}
