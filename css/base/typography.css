@@ -1,28 +1,27 @@
 h1 {
-	letter-spacing: var(--letterSpacing);
 	font: var(--tx-h1);
 }
 
 h2 {
-	letter-spacing: var(--letterSpacing);
 	font: var(--tx-h2);
 }
 
 h3 {
-	letter-spacing: var(--letterSpacing);
 	font: var(--tx-h3);
 }
 
 h4 {
-	letter-spacing: 0.01rem;
 	font: var(--tx-h4);
 }
 
 h5 {
-	letter-spacing: var(--letterSpacing);
 	font: var(--tx-h5);
 }
 
+p {
+	font: var(--tx-body);
+}
+
 strong {
-	font-weight: bolder;
+	font-weight: 700;
 }
