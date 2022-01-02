@@ -22,6 +22,6 @@ p {
 	font: var(--tx-body);
 }
 
-strong {
-	font-weight: 700;
-}
+/* strong {
+	font-weight: 800;
+} */
