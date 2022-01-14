@@ -16,90 +16,11 @@
     href="https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Black.woff" crossorigin />
   <link rel="font" type="font/woff"
     href="https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Heavy.woff" crossorigin />
-  <title>Email title or subject</title>
 
-  <style type="text/css">
-    /* reset */
-    #outlook a {
-      padding: 0;
-    }
-
-    /* Force Outlook to provide a "view in browser" menu link. */
-    .ExternalClass {
-      width: 100%;
-    }
-
-    /* Force Hotmail to display emails at full width */
-    .ExternalClass,
-    .ExternalClass p,
-    .ExternalClass span,
-    .ExternalClass font,
-    .ExternalClass td,
-    .ExternalClass div {
-      line-height: 100%;
-    }
-
-    /* Forces Hotmail to display normal line spacing.*/
-    p {
-      margin: 0;
-      padding: 0;
-      font-size: 0px;
-      line-height: 0px;
-    }
-
-    /* squash Exact Target injected paragraphs */
-    table td {
-      border-collapse: collapse;
-    }
-
-    /* Outlook 07, 10 padding issue fix */
-    table {
-      border-collapse: collapse;
-      mso-table-lspace: 0pt;
-      mso-table-rspace: 0pt;
-    }
-
-    /* remove spacing around Outlook 07, 10 tables */
-
-    /* bring inline */
-    img {
-      display: block;
-      outline: none;
-      text-decoration: none;
-      -ms-interpolation-mode: bicubic;
-    }
-
-    a img {
-      border: none;
-    }
-
-    a {
-      text-decoration: none;
-      color: #000001;
-    }
-
-    /* text link */
-    a.phone {
-      text-decoration: none;
-      color: #000001 !important;
-      pointer-events: auto;
-      cursor: default;
-    }
-
-    /* phone link, use as wrapper on phone numbers */
-    span {
-      font-size: 13px;
-      line-height: 17px;
-      font-family: monospace;
-      color: #000001;
-    }
-  </style>
-  <!--[if gte mso 9]>
-    <style>
-    /* Target Outlook 2007 and 2010 */
-    </style>
-  <![endif]-->
-
+  <!-- Email Reset -->
+  <!-- <style type="text/css">
+    .ii a[href] {}
+  </style> -->
   <!-- Variables -->
   <style type="text/css">
     /*
@@ -429,12 +350,12 @@
     .button {
       transition: all 0.24s ease-out;
       cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
       appearance: none;
       cursor: pointer;
-      color: #fff;
+      color: #fff !important;
       background: #611fef;
       padding: 0 16px;
       height: 52px;
@@ -464,16 +385,16 @@
 
     .main {
       background: var(--color-white);
-      padding: var(--space-12) var(--space-10);
+      padding: 40px 32px;
       min-height: 100vh;
     }
 
     article {
-      margin: var(--space-11) 0;
+      margin: 36px 0;
     }
 
     .cta {
-      margin: var(--space-10) auto 0 auto;
+      margin: 32px auto 0 auto;
     }
   </style>
 
