@@ -1,7 +1,9 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="font" type="font/woff"
     href="https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Regular.woff" crossorigin />
   <link rel="font" type="font/woff"
@@ -14,8 +16,220 @@
     href="https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Black.woff" crossorigin />
   <link rel="font" type="font/woff"
     href="https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Heavy.woff" crossorigin />
+  <title>Email title or subject</title>
+
+  <style type="text/css">
+    /* reset */
+    #outlook a {
+      padding: 0;
+    }
+
+    /* Force Outlook to provide a "view in browser" menu link. */
+    .ExternalClass {
+      width: 100%;
+    }
+
+    /* Force Hotmail to display emails at full width */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    /* Forces Hotmail to display normal line spacing.*/
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 0px;
+      line-height: 0px;
+    }
+
+    /* squash Exact Target injected paragraphs */
+    table td {
+      border-collapse: collapse;
+    }
+
+    /* Outlook 07, 10 padding issue fix */
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    /* remove spacing around Outlook 07, 10 tables */
+
+    /* bring inline */
+    img {
+      display: block;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000001;
+    }
+
+    /* text link */
+    a.phone {
+      text-decoration: none;
+      color: #000001 !important;
+      pointer-events: auto;
+      cursor: default;
+    }
+
+    /* phone link, use as wrapper on phone numbers */
+    span {
+      font-size: 13px;
+      line-height: 17px;
+      font-family: monospace;
+      color: #000001;
+    }
+  </style>
+  <!--[if gte mso 9]>
+    <style>
+    /* Target Outlook 2007 and 2010 */
+    </style>
+  <![endif]-->
+
+  <!-- Variables -->
+  <style type="text/css">
+    /*
+      Skin
+    */
+
+    :root {
+
+      /* Colors */
+
+      --color-primary: #611fef;
+      --color-primary-light: #9366f4;
+      --color-primary-dark: #4b0fcc;
+      --color-primary-extra-dark: #240a60;
+      --color-primary-disabled: #cec4e3;
+      --color-secondary: #ff0077;
+      --color-secondary-light: #ff4da0;
+      --color-secondary-dark: #990047;
+      --color-secondary-disabled: #e6b3ca;
+      --color-black: #151516;
+      --color-black-light: #3a3a3d;
+      --color-white: #fff;
+      --color-white-dark: #fafafa;
+      --color-white-extra-dark: #f7f7f7;
+      --color-gray: #cdcccf;
+      --color-gray-light: #f1f1f2;
+      --color-gray-extra-light: #fbfbfc;
+      --color-gray-extra-dark: #4d4c50;
+      --color-gray-slightly-dark: #9f9da2;
+      --color-gray-dark: #828087;
+      --color-error: #f0083e;
+      --color-error-light: #f94b74;
+      --color-error-dark: #8d0525;
+      --color-error-disabled: #d99eac;
+      --color-success: #08da8e;
+      --color-success-light: #37f8b2;
+      --color-success-dark: #04784e;
+      --color-success-disabled: #8fd2ba;
+      --color-info: #0a89ff;
+      --color-info-light: #57aeff;
+      --color-info-dark: #0054a3;
+      --color-info-disabled: #a7c5e2;
+      --color-warning: #ffc700;
+      --color-warning-light: #ffd84d;
+      --color-warning-dark: #997700;
+      --color-warning-disabled: #dfd19f;
+      --color-blue: #008cff;
+      --color-green: #00be8f;
+      --color-text: #3a3a3d;
+      --color-text-light: #4d4c50;
+      --color-text-extra-light: #828087;
+      --color-text-ultra-light: #9f9da2;
+
+      /* Gradients */
+
+      --gradient-primary: linear-gradient(61.62deg, #3300ff 13.06%, #6800f7 46.77%, #a300ef 85.79%);
+
+      /* Borders */
+
+      --border-1: 2px solid var(--color-gray-light);
+      --border-2: 2px solid var(--color-primary);
+      --border-macro-ui: 2px solid var(--color-gray-light);
+
+      /* Shadows */
+
+      --shadow-1: 0px 0px 8px rgba(0, 0, 0, 0.12);
+      --shadow-2: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      --shadow-3: 0px 0px 6px rgba(0, 0, 0, 0.05);
+      --shadow-4: -4px 0px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /*
+      Structure
+    */
+
+    :root {
+      /* Spacing (positioning, padding, margins, gaps) */
+
+      --space-0: 2px;
+      --space-1: 4px;
+      --space-2: 6px;
+      --space-3: 8px;
+      --space-4: 10px;
+      --space-5: 12px;
+      --space-6: 16px;
+      --space-7: 20px;
+      --space-8: 24px;
+      --space-9: 28px;
+      --space-10: 32px;
+      --space-11: 36px;
+      --space-12: 40px;
+      --space-13: 48px;
+      --space-14: 56px;
+      --space-15: 72px;
+      --space-16: 80px;
+      --space-17: 88px;
+      --space-18: 96px;
+
+      /* Sizing (height, width) */
+
+      --size-0: 8px;
+      --size-1: 12px;
+      --size-2: 16px;
+      --size-3: 20px;
+      --size-4: 24px;
+      --size-5: 32px;
+      --size-6: 36px;
+      --size-7: 44px;
+      --size-8: 52px;
+      --size-9: 64px;
+      --size-10: 80px;
+      --size-11: 92px;
+      --size-12: 108px;
+
+      /* Border radius */
+
+      --border-radius-xxs: 4px;
+      --border-radius-xs: 6px;
+      --border-radius-sm: 8px;
+      --border-radius-ms: 12px;
+      --border-radius-md: 16px;
+      --border-radius-ls: 20px;
+      --border-radius-lg: 24px;
+      --border-radius-xl: 32px;
+      --border-radius-xxl: 36px;
+      --border-radius-circle: 96px;
+    }
+  </style>
   <!-- Reset -->
-  <style>
+  <style type="text/css">
     *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
       all: unset;
       display: revert;
@@ -29,9 +243,9 @@
     }
 
     /*
-    Remove list styles (bullets/numbers)
-    in case you use it with normalize.css
-  */
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
     ol,
     ul {
       list-style: none;
@@ -84,7 +298,7 @@
     }
   </style>
   <!-- Fonts -->
-  <style>
+  <style type="text/css">
     @font-face {
       font-family: 'Obibok';
       font-display: swap;
@@ -127,43 +341,8 @@
       src: url('https://resider-frontend.s3.eu-central-1.amazonaws.com/fonts/Obibok-Heavy.woff') format('woff');
     }
   </style>
-  <!-- Layout -->
-  <style>
-    body,
-    .main {
-      background-color: #fafafa !important;
-      color: #3a3a3d;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: left;
-      max-width: 560px;
-      margin: auto;
-    }
-
-    .main {
-      padding: 48px 16px;
-    }
-
-    .button {
-      transition: all 0.24s ease-out;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      appearance: none;
-      cursor: pointer;
-      color: #fff;
-      background: #611fef;
-      padding: 0 16px;
-      height: 52px;
-      font: 700 15px/20px 'Obibok', -apple-system, sans-serif;
-      border: 2px solid transparent;
-      border-radius: 20px;
-    }
-
-
+  <!-- Typography -->
+  <style type="text/css">
     .tx-h1 {
       font-weight: 900;
       font-size: 34px;
@@ -245,32 +424,121 @@
       font-weight: 700;
     }
   </style>
+  <!-- Components -->
+  <style type="text/css">
+    .button {
+      transition: all 0.24s ease-out;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      appearance: none;
+      cursor: pointer;
+      color: #fff;
+      background: #611fef;
+      padding: 0 16px;
+      height: 52px;
+      font: 700 15px/20px 'Obibok', -apple-system, sans-serif;
+      border: 2px solid transparent;
+      border-radius: 20px;
+    }
+  </style>
+  <!-- Layout -->
+  <style type="text/css">
+    body {
+      background: var(--color-gray-light);
+    }
+
+    body>table {
+      max-width: 480px;
+      margin: 0 auto !important;
+    }
+
+    body,
+    .main {
+      color: #3a3a3d;
+      justify-content: center;
+      text-align: left;
+      margin: auto;
+    }
+
+    .main {
+      background: var(--color-white);
+      padding: var(--space-12) var(--space-10);
+      min-height: 100vh;
+    }
+
+    article {
+      margin: var(--space-11) 0;
+    }
+
+    .cta {
+      margin: var(--space-10) auto 0 auto;
+    }
+  </style>
+
 </head>
 
-<body>
-  <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
-    <tr>
-      <td>
-        <div class="main">
-          <img src="https://www.resider.pl/svg/brand/resider-logo.svg" height="28px" alt="Resider" />
+<body style="width:100%; margin:0; padding:0; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;">
 
-          <h1 class="tx-h2" style="margin: 24px 0;">
-            Witaj w Resider!
-          </h1>
-          <p>Cieszymy się, że z nami jesteś!</p>
-          <p>
-            Jeśli masz jakiekolwiek problemy ze swoim kontem, skontaktuj się z nami pisząc nam wiadomość na adres
-            <a href="mailto:kontakt@resider.pl">kontakt@resider.pl</a>
-          </p>
-          <p style="width: 100%;">
-            Pozdrawiamy,
-            <br />
-            <strong>Zespół Resider</strong>
-          </p>
-        </div>
+  <!-- body wrapper -->
+  <table cellpadding="0" cellspacing="0" border="0"
+    style="margin:0; padding:0; width:100%; line-height: 100% !important;">
+    <tr>
+      <td valign="top">
+        <!-- edge wrapper -->
+        <table cellpadding="0" cellspacing="0" border="0" align="center" width="600" style="background: #efefef;">
+          <tr>
+            <td valign="top">
+              <!-- content wrapper -->
+              <table cellpadding="0" cellspacing="0" border="0" align="center">
+                <tr>
+                  <td valign="top" style="vertical-align: top;">
+                    <!-- ///////////////////////////////////////////////////// -->
+
+                    <table cellpadding="0" cellspacing="0" border="0" align="center">
+                      <tr>
+                        <td valign="top" style="vertical-align: top;">
+                          <div class="main">
+                            <img src="https://www.resider.pl/brand/png/resider-logo.png" height="28px" alt="Resider" />
+
+                            <article>
+                              <h1 class="tx-h2" style="margin: 24px 0;">
+                                Witaj w Resider!
+                              </h1>
+                              <p>Cieszymy się, że z nami jesteś!</p>
+                              <p>
+                                Jeśli masz jakiekolwiek problemy ze swoim kontem, skontaktuj się z nami pisząc nam
+                                wiadomość na adres
+                                <a href="mailto:kontakt@resider.pl">kontakt@resider.pl</a>
+                              </p>
+                              <p style="width: 100%;">
+                                Pozdrawiamy,
+                                <br />
+                                <strong>Zespół Resider</strong>
+                              </p>
+                            </article>
+                            <a href="https://www.resider.pl/explore" class="button cta">
+                              Zacznij odkrywać mieszkania
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- //////////// -->
+                  </td>
+                </tr>
+              </table>
+              <!-- / content wrapper -->
+            </td>
+          </tr>
+        </table>
+        <!-- / edge wrapper -->
       </td>
     </tr>
   </table>
+  <!-- / page wrapper -->
 </body>
 
 </html>
