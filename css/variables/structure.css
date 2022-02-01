@@ -53,4 +53,8 @@
 	--border-radius-xl: 32px;
 	--border-radius-xxl: 36px;
 	--border-radius-circle: 96px;
+
+	/* Negative factor */
+
+	--negative-factor-1: -1;
 }
