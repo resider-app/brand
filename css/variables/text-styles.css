@@ -3,7 +3,7 @@
 */
 
 :root {
-	--font-family: 'Obibok', -apple-system, 'Segoe UI',
+	--font-family: 'Obibok', 'Montserrat', -apple-system, 'Segoe UI',
 		'Ubuntu', sans-serif;
 
 	/* Headings */
