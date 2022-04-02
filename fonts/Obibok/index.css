@@ -1,0 +1,41 @@
+@font-face {
+	font-family: "Obibok";
+	font-display: swap;
+	font-weight: 400;
+	src: url("./Obibok-Regular.woff") format("woff"), url("./Obibok-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Obibok";
+	font-display: swap;
+	font-weight: 500;
+	src: url("./Obibok-Medium.woff") format("woff"), url("./Obibok-Medium.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Obibok";
+	font-display: swap;
+	font-weight: 600;
+	src: url("./Obibok-SemiBold.woff") format("woff"), url("./Obibok-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Obibok";
+	font-display: swap;
+	font-weight: 700;
+	src: url("./Obibok-Bold.woff") format("woff"), url("./Obibok-Bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Obibok";
+	font-display: swap;
+	font-weight: 800;
+	src: url("./Obibok-Black.woff") format("woff"), url("./Obibok-Black.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Obibok";
+	font-display: swap;
+	font-weight: 900;
+	src: url("./Obibok-Heavy.woff") format("woff"), url("./Obibok-Heavy.woff2") format("woff2");
+}
