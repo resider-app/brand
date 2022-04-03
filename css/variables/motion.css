@@ -2,20 +2,20 @@
 	Motion
 */
 
-:root  {
+:root {
+	/* Durations */
 
-  /* Durations */
-
+	--time-0: 0.08s;
 	--time-1: 0.12s;
 	--time-2: 0.2s;
 	--time-3: 0.28s;
 	--time-4: 0.32s;
-  --time-5: 0.4s;
-  --time-6: 0.6s;
+	--time-5: 0.4s;
+	--time-6: 0.6s;
 	--time-7: 0.72s;
 
-  /* Transitions */
-  
+	/* Transitions */
+
 	--transition-0: var(--time-0) all ease-out;
 	--transition-1: var(--time-1) all ease-out;
 	--transition-2: var(--time-2) all ease-in-out;

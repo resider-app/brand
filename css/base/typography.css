@@ -1,25 +1,25 @@
 h1 {
-	font: var(--tx-h1);
+	font: var(--f-h1);
 }
 
 h2 {
-	font: var(--tx-h2);
+	font: var(--f-h2);
 }
 
 h3 {
-	font: var(--tx-h3);
+	font: var(--f-h3);
 }
 
 h4 {
-	font: var(--tx-h4);
+	font: var(--f-h4);
 }
 
 h5 {
-	font: var(--tx-h5);
+	font: var(--f-h5);
 }
 
 p {
-	font: var(--tx-body);
+	font: var(--f-body);
 }
 
 /* strong {

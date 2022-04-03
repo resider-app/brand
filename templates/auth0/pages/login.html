@@ -35,7 +35,7 @@
   body,
   html {
     height: 100%;
-    background-color: var(--color-white);
+    background-color: var(--c-white);
     font-family: var(--font-family);
   }
 
@@ -62,9 +62,9 @@
   .button {
     --borderWidth: 2px;
     --borderColor: transparent;
-    --background: var(--color-primary);
-    --backgroundHover: var(--color-primary-light);
-    --color: var(--color-white);
+    --background: var(--c-primary);
+    --backgroundHover: var(--c-primary-light);
+    --color: var(--c-white);
     --height: 52px;
     transition: var(--transition-1);
     cursor: pointer;
@@ -141,74 +141,74 @@
   }
 
   .button[disabled=disabled] {
-    background: var(--color-primary-disabled) !important;
+    background: var(--c-primary-disabled) !important;
     pointer-events: none;
   }
 
   .button.secondary {
-    --borderColor: var(--color-primary);
-    --borderColorHover: var(--color-primary);
+    --borderColor: var(--c-primary);
+    --borderColorHover: var(--c-primary);
     --borderWidth: 2px;
-    --background: var(--color-white);
-    --backgroundHover: var(--color-primary);
-    --color: var(--color-primary);
-    --colorHover: var(--color-white);
+    --background: var(--c-white);
+    --backgroundHover: var(--c-primary);
+    --color: var(--c-primary);
+    --colorHover: var(--c-white);
   }
 
   .button.tertiary {
-    --background: var(--color-gray-light);
-    --backgroundHover: var(--color-gray);
-    --color: var(--color-primary);
-    --colorHover: var(--color-primary);
+    --background: var(--c-gray-light);
+    --backgroundHover: var(--c-gray);
+    --color: var(--c-primary);
+    --colorHover: var(--c-primary);
   }
 
   .button.error {
     --borderWidth: 2px;
-    --background: var(--color-error);
-    --backgroundHover: var(--color-error);
-    --color: var(--color-white);
-    --colorHover: var(--color-white);
+    --background: var(--c-error);
+    --backgroundHover: var(--c-error);
+    --color: var(--c-white);
+    --colorHover: var(--c-white);
   }
 
   .button.success {
     --borderWidth: 2px;
-    --background: var(--color-success);
-    --backgroundHover: var(--color-success);
-    --color: var(--color-white);
-    --colorHover: var(--color-white);
+    --background: var(--c-success);
+    --backgroundHover: var(--c-success);
+    --color: var(--c-white);
+    --colorHover: var(--c-white);
   }
 
   .button.warning {
     --borderWidth: 2px;
-    --background: var(--color-warning);
-    --backgroundHover: var(--color-warning);
-    --color: var(--color-white);
-    --colorHover: var(--color-white);
+    --background: var(--c-warning);
+    --backgroundHover: var(--c-warning);
+    --color: var(--c-white);
+    --colorHover: var(--c-white);
   }
 
   .button.info {
     --borderWidth: 2px;
-    --background: var(--color-info);
-    --backgroundHover: var(--color-info);
-    --color: var(--color-white);
-    --colorHover: var(--color-white);
+    --background: var(--c-info);
+    --backgroundHover: var(--c-info);
+    --color: var(--c-white);
+    --colorHover: var(--c-white);
   }
 
   .button.ghost {
     --borderWidth: 2px;
     --background: transparent;
     --backgroundHover: transparent;
-    --color: var(--color-text);
+    --color: var(--c-text);
   }
 
   .field {
     height: 52px !important;
     border-radius: var(--border-radius-ls);
-    background-color: var(--color-white);
+    background-color: var(--c-white);
     padding: 0 12px !important;
     border: 2px solid transparent !important;
     box-shadow: var(--shadow-3);
-    border-color: var(--color-primary) !important;
+    border-color: var(--c-primary) !important;
   }
 
   .field,
@@ -226,7 +226,7 @@
     letter-spacing: var(--letterSpacing);
     font: var(--fontWeight, 600) 15px/var(--lineHeight, 28px) var(--font-family) !important;
     font-weight: 600;
-    color: var(--color-text-light);
+    color: var(--c-text-light);
   }
 </style>
 
