@@ -43,7 +43,7 @@
 	--c-warning-disabled: #dfd19f;
 	--c-blue: #008cff;
 	--c-green: #00be8f;
-	--c-text: #3a3a3d;
+	--c-text: #271f36;
 	--c-text-light: #4d4c50;
 	--c-text-extra-light: #828087;
 	--c-text-ultra-light: #9f9da2;
@@ -51,7 +51,12 @@
 
 	/* Gradients */
 
-	--gradient-primary: linear-gradient(61.62deg, #3300ff 13.06%, #6800f7 46.77%, #a300ef 85.79%);
+	--gradient-primary: linear-gradient(
+		61.62deg,
+		#3300ff 13.06%,
+		#6800f7 46.77%,
+		#a300ef 85.79%
+	);
 
 	/* Borders */
 

@@ -18,6 +18,15 @@ h5 {
 	font: var(--f-h5);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin-bottom: 1.25rem;
+	margin-top: 0;
+}
+
 p {
 	font: var(--f-body);
 }
