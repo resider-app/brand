@@ -28,69 +28,62 @@
     */
 
     :root {
-
       /* Colors */
 
-      --c-primary: #611fef;
-      --c-primary-light: #9366f4;
-      --c-primary-dark: #4b0fcc;
-      --c-primary-extra-dark: #240a60;
-      --c-primary-disabled: #cec4e3;
-      --c-secondary: #ff0077;
-      --c-secondary-light: #ff4da0;
-      --c-secondary-dark: #990047;
-      --c-secondary-disabled: #e6b3ca;
-      --c-black: #151516;
-      --c-black-light: #3a3a3d;
-      --c-white: #fff;
-      --c-white-dark: #fafafa;
-      --c-white-extra-dark: #f7f7f7;
-      --c-gray: #cdcccf;
-      --c-gray-light: #f1f1f2;
-      --c-gray-extra-light: #fbfbfc;
-      --c-gray-extra-dark: #4d4c50;
-      --c-gray-slightly-dark: #9f9da2;
-      --c-gray-dark: #828087;
-      --c-error: #f0083e;
-      --c-error-light: #f94b74;
-      --c-error-dark: #8d0525;
-      --c-error-disabled: #d99eac;
-      --c-success: #08da8e;
-      --c-success-light: #37f8b2;
-      --c-success-dark: #04784e;
-      --c-success-disabled: #8fd2ba;
-      --c-info: #0a89ff;
-      --c-info-light: #57aeff;
-      --c-info-dark: #0054a3;
-      --c-info-disabled: #a7c5e2;
-      --c-warning: #ffc700;
-      --c-warning-light: #ffd84d;
-      --c-warning-dark: #997700;
-      --c-warning-disabled: #dfd19f;
+      /* Brand */
+      --c-primary: 256, 89%, 61%;
+      --c-primary-light: 256, 89%, 72%;
+      --c-primary-dark: 256, 89%, 36%;
+      --c-secondary: 335, 100%, 50%;
+      --c-secondary-light: 335, 100%, 70%;
+      --c-secondary-dark: 335, 100%, 40%;
+      /* Grayscale */
+      --c-black: 256, 3%, 8%;
+      --c-black-light: 256, 8%, 21%;
+      --c-gray-extra-dark: 256, 10%, 40%;
+      --c-gray-dark: 256, 10%, 58%;
+      --c-gray: 256, 12%, 73%;
+      --c-gray-light: 256, 7%, 86%;
+      --c-gray-extra-light: 256, 7%, 94%;
+      --c-white-extra-dark: 256, 4%, 97%;
+      --c-white-dark: 256, 7%, 98%;
+      --c-white: 0, 0%, 100%;
+      /* Status  */
+      --c-error: 346, 94%, 49%;
+      --c-success: 158, 88%, 44%;
+      --c-info: 207, 100%, 50%;
+      --c-warning: 47, 100%, 50%;
+      /* Text */
+      --c-text: hsl(var(--c-black-light));
+      --c-text-light: hsl(var(--c-gray-extra-dark));
+      --c-text-extra-light: hsl(var(--c-gray-dark));
+      --c-text-ultra-light: hsl(var(--c-gray));
+      --c-skeleton: hsl(var(--c-gray-light));
+      /* Miscellanous */
       --c-blue: #008cff;
       --c-green: #00be8f;
-      --c-text: #3a3a3d;
-      --c-text-light: #4d4c50;
-      --c-text-extra-light: #828087;
-      --c-text-ultra-light: #9f9da2;
 
       /* Gradients */
 
-      --gradient-primary: linear-gradient(61.62deg, #3300ff 13.06%, #6800f7 46.77%, #a300ef 85.79%);
+      --gradient-primary: linear-gradient(61.62deg,
+          #3300ff 13.06%,
+          #6800f7 46.77%,
+          #a300ef 85.79%);
 
       /* Borders */
 
-      --border-1: 2px solid var(--c-gray-light);
-      --border-2: 2px solid var(--c-primary);
-      --border-macro-ui: 2px solid var(--c-gray-light);
+      --border-1: 2px solid hsl(var(--c-gray-light));
+      --border-2: 2px solid hsl(var(--c-primary));
+      --border-macro-ui: 2px solid hsl(var(--c-gray-light));
 
       /* Shadows */
 
-      --shadow-1: 0px 0px 8px rgba(0, 0, 0, 0.12);
-      --shadow-2: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      --shadow-3: 0px 0px 6px rgba(0, 0, 0, 0.05);
-      --shadow-4: -4px 0px 16px rgba(0, 0, 0, 0.2);
+      --shadow-1: 0px 0px 8px hsla(0, 0%, 0%, 0.12);
+      --shadow-2: 0px 4px 8px hsla(0, 0%, 0%, 0.1);
+      --shadow-3: 0px 0px 6px hsla(0, 0%, 0%, 0.05);
+      --shadow-4: -4px 0px 16px hsla(0, 0%, 0%, 0.2);
     }
+
 
     /*
       Structure
@@ -367,7 +360,7 @@
   <!-- Layout -->
   <style type="text/css">
     body {
-      background: var(--c-gray-light);
+      background: hsl(var(--c-gray-light));
     }
 
     body>table {
@@ -384,7 +377,7 @@
     }
 
     .main {
-      background: var(--c-white);
+      background: hsl(var(--c-white));
       padding: 40px 32px;
       min-height: 100vh;
     }

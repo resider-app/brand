@@ -35,7 +35,7 @@
   body,
   html {
     height: 100%;
-    background-color: var(--c-white);
+    background-color: hsl(var(--c-white));
     font-family: var(--font-family);
   }
 
@@ -62,9 +62,9 @@
   .button {
     --borderWidth: 2px;
     --borderColor: transparent;
-    --background: var(--c-primary);
-    --backgroundHover: var(--c-primary-light);
-    --color: var(--c-white);
+    --background: hsl(var(--c-primary));
+    --backgroundHover: hsl(var(--c-primary-light));
+    --color: hsl(var(--c-white));
     --height: 52px;
     transition: var(--transition-1);
     cursor: pointer;
@@ -146,52 +146,52 @@
   }
 
   .button.secondary {
-    --borderColor: var(--c-primary);
-    --borderColorHover: var(--c-primary);
+    --borderColor: hsl(var(--c-primary));
+    --borderColorHover: hsl(var(--c-primary));
     --borderWidth: 2px;
-    --background: var(--c-white);
-    --backgroundHover: var(--c-primary);
-    --color: var(--c-primary);
-    --colorHover: var(--c-white);
+    --background: hsl(var(--c-white));
+    --backgroundHover: hsl(var(--c-primary));
+    --color: hsl(var(--c-primary));
+    --colorHover: hsl(var(--c-white));
   }
 
   .button.tertiary {
-    --background: var(--c-gray-light);
-    --backgroundHover: var(--c-gray);
-    --color: var(--c-primary);
-    --colorHover: var(--c-primary);
+    --background: hsl(var(--c-gray-light));
+    --backgroundHover: hsl(var(--c-gray));
+    --color: hsl(var(--c-primary));
+    --colorHover: hsl(var(--c-primary));
   }
 
   .button.error {
     --borderWidth: 2px;
-    --background: var(--c-error);
-    --backgroundHover: var(--c-error);
-    --color: var(--c-white);
-    --colorHover: var(--c-white);
+    --background: hsl(var(--c-error));
+    --backgroundHover: hsl(var(--c-error));
+    --color: hsl(var(--c-white));
+    --colorHover: hsl(var(--c-white));
   }
 
   .button.success {
     --borderWidth: 2px;
-    --background: var(--c-success);
-    --backgroundHover: var(--c-success);
-    --color: var(--c-white);
-    --colorHover: var(--c-white);
+    --background: hsl(var(--c-success));
+    --backgroundHover: hsl(var(--c-success));
+    --color: hsl(var(--c-white));
+    --colorHover: hsl(var(--c-white));
   }
 
   .button.warning {
     --borderWidth: 2px;
-    --background: var(--c-warning);
-    --backgroundHover: var(--c-warning);
-    --color: var(--c-white);
-    --colorHover: var(--c-white);
+    --background: hsl(var(--c-warning));
+    --backgroundHover: hsl(var(--c-warning));
+    --color: hsl(var(--c-white));
+    --colorHover: hsl(var(--c-white));
   }
 
   .button.info {
     --borderWidth: 2px;
-    --background: var(--c-info);
-    --backgroundHover: var(--c-info);
-    --color: var(--c-white);
-    --colorHover: var(--c-white);
+    --background: hsl(var(--c-info));
+    --backgroundHover: hsl(var(--c-info));
+    --color: hsl(var(--c-white));
+    --colorHover: hsl(var(--c-white));
   }
 
   .button.ghost {
@@ -204,11 +204,11 @@
   .field {
     height: 52px !important;
     border-radius: var(--border-radius-ls);
-    background-color: var(--c-white);
+    background-color: hsl(var(--c-white));
     padding: 0 12px !important;
     border: 2px solid transparent !important;
     box-shadow: var(--shadow-3);
-    border-color: var(--c-primary) !important;
+    border-color: hsl(var(--c-primary)) !important;
   }
 
   .field,
