@@ -29,11 +29,11 @@
 	--c-info: 207, 100%, 50%;
 	--c-warning: 47, 100%, 50%;
 	/* Text */
-	--c-text: hsl(var(--c-black-light));
-	--c-text-light: hsl(var(--c-gray-extra-dark));
-	--c-text-extra-light: hsl(var(--c-gray-dark));
-	--c-text-ultra-light: hsl(var(--c-gray));
-	--c-skeleton: hsl(var(--c-gray-light));
+	--c-text: var(--c-black-light);
+	--c-text-light: var(--c-gray-extra-dark);
+	--c-text-extra-light: var(--c-gray-dark);
+	--c-text-ultra-light: var(--c-gray);
+	--c-skeleton: var(--c-gray-light);
 	/* Miscellanous */
 	--c-blue: #008cff;
 	--c-green: #00be8f;
