@@ -3,7 +3,6 @@
 */
 
 :root {
-
 	/* Border radius */
 
 	--border-radius-xxs: 4px;
@@ -20,4 +19,14 @@
 	/* Negative factor */
 
 	--negative-factor-1: -1;
+
+	/* Layout */
+
+	--layout-padding: 0.75rem;
+}
+
+@media all and (min-width: 768px) {
+	:root {
+		--layout-padding: 1.25rem;
+	}
 }
