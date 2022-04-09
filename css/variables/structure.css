@@ -20,9 +20,10 @@
 
 	--negative-factor-1: -1;
 
-	/* Layout */
+	/* Padding */
 
 	--layout-padding: 0.75rem;
+	--field-padding: 0.75rem;
 }
 
 @media all and (min-width: 768px) {
