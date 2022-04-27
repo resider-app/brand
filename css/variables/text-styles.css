@@ -30,5 +30,6 @@
 	/* Buttons */
 
 	--f-button: 700 17px / 20px var(--ff);
+	--f-button-medium: 700 15px / 18px var(--ff);
 	--f-button-small: 700 13px / 16px var(--ff);
 }
