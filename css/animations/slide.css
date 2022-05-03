@@ -1,0 +1,9 @@
+@keyframes offerCardSlideIn {
+	0% {
+		margin-top: var(--windowInnerHeight);
+	}
+
+	100% {
+		margin-top: 0;
+	}
+}
