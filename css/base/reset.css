@@ -17,4 +17,11 @@
 		user-select: none;
 		-webkit-user-select: none;
 	}
+
+	input,
+	textarea,
+	select {
+		user-select: all;
+		-webkit-user-select: all;
+	}
 }
